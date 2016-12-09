@@ -15,13 +15,7 @@
                 <p>@lang('message.post')</p> <br> {{ trans("message.post") }}
                 <p>@lang('pagination.previous')</p>
                 </div>
-                {!! Form::open(array('url' => 'foo/bar', 'method'=>'GET', 'enctype'=>'multpart/form-data')) !!}
-                    
-                    {{ Form::label('size', trans('message.size')) }}
-
-                    {{ Form::select('size', array('L' => trans('message.large'), 'S' => trans('message.small'))) }}
-                    
-                {!! Form::close() !!}
+               
             </div>
         </div>
     </div>
